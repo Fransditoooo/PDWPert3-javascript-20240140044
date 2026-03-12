@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; 
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at 10% 20%, rgb(0, 71, 88) 0%, rgb(1, 10, 20) 90%);
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 60px;
+  border-radius: 30px;
+  width: 420px;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  color: white;
+}
+
+.login-box h2 {
+  margin-bottom: 30px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.clock {
+  font-size: 1.8rem;
+  font-family: 'Courier New', monospace;
+  color: #00d2ff; 
+  text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
+  margin-bottom: 30px;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.input-box label {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label {
+  top: -20px;
+  font-size: 12px;
+  color: #00d2ff;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: linear-gradient(45deg, #00d2ff, #3a7bd5);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px; 
+  cursor: pointer;
+  transition: 0.4s;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+button:hover {
+  box-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
+  transform: translateY(-5px);
+}
